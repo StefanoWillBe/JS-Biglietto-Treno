@@ -1,0 +1,142 @@
+/*RESET*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*COMMON*/
+body {
+	background-color: darkred;
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+section .title,
+.title-ticket h2 {
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.container {
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px 0;
+	margin: 20px 0;
+	box-shadow: 3px 3px 15px -3px #000000;
+}
+
+.passengers-name,
+.passengers-offer,
+.passengers-offer,
+.passengers-carriage,
+.passengers-code,
+.passengers-cost {
+	font-weight: 600;
+	padding: 20px 10px;
+	text-align: center;
+}
+
+.passengers-name > div,
+.passengers-offer > div,
+.passengers-offer > div,
+.passengers-carriage > div,
+.passengers-code > div,
+.passengers-cost > div {
+	font-weight: normal;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.none {
+	opacity: 0;
+	transition: 0.8s;
+}
+.block {
+	opacity: 1;
+	transition: 0.8s;
+}
+
+/*Wrapper*/
+.wrapper {
+	width: 80%;
+	margin: auto;
+	padding: 20px 0;
+}
+
+/*Calcolo*/
+/*Insert Data*/
+.insert-data {
+	display: flex;
+	justify-content: space-around;
+}
+.insert-data label {
+	display: block;
+	margin-bottom: 10px;
+	color: #b91450;
+	font-weight: 600;
+}
+.insert-data input,
+.insert-data select {
+	border-radius: 5px;
+	border: 1px solid #b91450;
+	padding: 5px;
+	text-align: center;
+}
+
+.nome-utente,
+.km-da-percorrere,
+.eta {
+	text-align: center;
+}
+
+/*Button data*/
+.button-data {
+	text-align: center;
+	margin-top: 30px;
+}
+.generate-button,
+.cancel-button {
+	display: inline-block;
+	padding: 0 5px;
+}
+.generate-button button,
+.cancel-button button {
+	padding: 5px;
+	color: #b91450;
+	font-weight: 600;
+	border-radius: 5px;
+}
+
+/*Biglietto*/
+
+#ticket-user .container {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*Passenger Title*/
+.passengers-title {
+	text-transform: uppercase;
+	padding-bottom: 5px;
+}
+
+/*Passengers Content*/
+.passengers-content {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid grey;
+	border-left: 0;
+	border-right: 0;
+}
+
+.passengers-name {
+	background-color: grey;
+	text-transform: uppercase;
+}
+
+/*Cost User*/
+#cost-user::after {
+	content: "€";
+}

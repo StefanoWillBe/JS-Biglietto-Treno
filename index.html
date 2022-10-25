@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Prezzo del Biglietto</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!--Wrapper-->
+		<div class="wrapper">
+			<!--Sezione Titolo-->
+			<section>
+				<div class="title">
+					<h1>Calcola il prezzo del tuo biglietto</h1>
+				</div>
+			</section>
+			<!--End Sezione Titolo-->
+			<!--Calcolo-->
+			<section>
+				<!--Container-->
+				<div class="container">
+					<!--Inserimento dati utente-->
+					<div class="insert-data">
+						<!--Nome utente-->
+						<div class="nome-utente">
+							<label for="nome-cognome">Nome Cognome</label>
+							<input
+								type="text"
+								placeholder="Inserisci Nome e Cognome"
+								id="nome-cognome"
+								value=""
+							/>
+						</div>
+						<!--Km da percorrere-->
+						<div class="km-da-percorrere">
+							<label for="km-inseriti">Km da percorrere</label>
+							<input
+								type="number"
+								placeholder="Inserisci i KM"
+								id="km-inseriti"
+								value=""
+								min="0"
+							/>
+						</div>
+						<!--Età-->
+						<div class="eta">
+							<label for="eta-inserita">Fascia di Età</label>
+							<select id="eta-inserita">
+								<option disabled selected value="">Seleziona</option>
+								<option value="minorenne">Minorenne</option>
+								<option value="maggiorenne">Maggiorenne</option>
+								<option value="over">Over 65</option>
+							</select>
+						</div>
+					</div>
+					<!--End Inserimento dati utente-->
+					<!--Bottoni-->
+					<div class="button-data">
+						<!--Genera-->
+						<div class="generate-button">
+							<button id="generate">Genera</button>
+						</div>
+						<!--Annulla-->
+						<div class="cancel-button">
+							<button id="cancel">Annulla</button>
+						</div>
+					</div>
+				</div>
+				<!--End Container-->
+			</section>
+			<!--End Calcolo-->
+			<!--Biglietto-->
+			<section class="none" id="ticket-user">
+				<div class="title-ticket">
+					<h2>Il tuo Biglietto</h2>
+				</div>
+				<div class="container">
+					<!--Passengers Title-->
+					<div class="passengers-title">
+						<h4>Dettaglio Passeggeri</h4>
+					</div>
+					<!--Passengers Content-->
+					<div class="passengers-content">
+						<!--Name user-->
+						<div class="passengers-name">
+							<p>Nome Passeggero</p>
+							<div id="name-user"></div>
+						</div>
+						<!--End Name user-->
+						<!--Offer user-->
+						<div class="passengers-offer">
+							<p>Offerta</p>
+							<div id="offer-user"></div>
+						</div>
+						<!--End Offer user-->
+						<!--Carriage user-->
+						<div class="passengers-carriage">
+							<p>Carrozza</p>
+							<div id="carriage-user"></div>
+						</div>
+						<!--End Carriage user-->
+						<!--Code CP-->
+						<div class="passengers-code">
+							<p>Codice CP</p>
+							<div id="code-user"></div>
+						</div>
+						<!--End Code Cp-->
+						<!--Cost user-->
+						<div class="passengers-cost">
+							<p>Costo biglietto</p>
+							<div id="cost-user"></div>
+						</div>
+						<!--End Cost user-->
+					</div>
+				</div>
+			</section>
+			<!--End Biglietto-->
+		</div>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
