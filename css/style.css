@@ -7,7 +7,7 @@
 
 /*COMMON*/
 body {
-	background-color: darkred;
+	background-color: rgb(165, 15, 15);
 	font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
@@ -16,7 +16,8 @@ section .title,
 	color: #fff;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 20px;
+	font-size: 35px;
+	
 }
 
 .container {
@@ -29,7 +30,6 @@ section .title,
 
 .passengers-name,
 .passengers-offer,
-.passengers-offer,
 .passengers-carriage,
 .passengers-code,
 .passengers-cost {
@@ -40,22 +40,22 @@ section .title,
 
 .passengers-name > div,
 .passengers-offer > div,
-.passengers-offer > div,
 .passengers-carriage > div,
 .passengers-code > div,
 .passengers-cost > div {
 	font-weight: normal;
 	text-align: center;
 	padding-top: 50px;
+	color: #070003;
 }
 
 .none {
 	opacity: 0;
-	transition: 0.8s;
+	transition: 0.4s;
 }
 .block {
 	opacity: 1;
-	transition: 0.8s;
+	transition: 0.4s;
 }
 
 /*Wrapper*/
@@ -103,10 +103,13 @@ section .title,
 }
 .generate-button button,
 .cancel-button button {
-	padding: 5px;
-	color: #b91450;
+	background-color: #b91450;
+	padding: 5px 15px;
+	color: white;
 	font-weight: 600;
+	border: 1px solid yellow;
 	border-radius: 5px;
+	
 }
 
 /*Biglietto*/
@@ -118,21 +121,27 @@ section .title,
 
 /*Passenger Title*/
 .passengers-title {
+	background-color: #b91450;
 	text-transform: uppercase;
-	padding-bottom: 5px;
+	padding: 5px;
+	margin-bottom: 5px;
+	color: #f7f3f4;
+	font-weight: 600;
+	text-align: center;
 }
 
 /*Passengers Content*/
 .passengers-content {
 	display: flex;
 	justify-content: space-between;
-	border: 1px solid grey;
+	border: 1px solid color #b91450;
 	border-left: 0;
 	border-right: 0;
 }
 
 .passengers-name {
-	background-color: grey;
+	background-color: #a9b9cb;
+	color: #01070f;
 	text-transform: uppercase;
 }
 
