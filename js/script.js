@@ -24,11 +24,14 @@ generateButton.addEventListener("click" , function ()
 
      // calcolo offerta: sconto 20% se minorenne, 40% se over 65 o costo standard se maggiorenne
         if( etaInserita == "minorenne" ){
+            // 20% di sconto
             prezzoFinale -= ( prezzoFinale * 20 / 100 );
         } else if ( etaInserita == "over" ){
+            // 40% di sconto
             prezzoFinale -= ( prezzoFinale * 40 / 100 );
         }
 
+        // stampa a schermo del biglietto finale
         stampaBiglietto(userName, etaInserita, prezzoFinale);
     
         // al click del bottone genera visualizzo il biglietto che altrimenti ha display none
@@ -41,7 +44,7 @@ generateButton.addEventListener("click" , function ()
 /**
  * Funzione che stampa il biglietto
  * @param {string} user Nome della persona che compra il biglietto
- * @param {int} eta Età della persona che compra il biglietto
+ * @param {string} eta Età della persona che compra il biglietto
  * @param {float} prezzo Prezzo totale del biglietto
  */
 function stampaBiglietto(user, eta, prezzo) {
